@@ -1,0 +1,45 @@
+@media (max-width: 71em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 66em) {
+  .main-container {
+    gap: 7.2rem;
+    margin: 0 3.2rem;
+    max-width: 750px;
+  }
+  .main-container::before {
+    left: -12rem;
+  }
+  .main-container::after {
+    right: -12rem;
+  }
+}
+
+/* 832px */
+@media (max-width: 52em) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 6.4rem 3.6rem;
+  }
+  .center {
+    height: max-content;
+  }
+  .content {
+    text-align: center;
+  }
+}
+@media (max-width: 40em) {
+  .main-container::before {
+    left: -20rem;
+    top: -24rem;
+    border-bottom-right-radius: 40rem;
+  }
+  .main-container::after {
+    right: -20.4rem;
+    bottom: -12rem;
+    border-top-left-radius: 40rem;
+  }
+}
